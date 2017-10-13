@@ -1,0 +1,17 @@
+{
+  "name": "adapt-videoHelp",
+  "version": "1.0.1",
+  "framework": "^2.0.6",
+  "homepage": "",
+  "issues": "",
+  "displayName" : "Course Video Help",
+  "extension" : "videoHelp",
+  "description": "Course video help",
+  "main": "/js/adapt-videoHelp.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_videoHelp"
+}

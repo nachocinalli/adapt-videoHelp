@@ -1,0 +1,87 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required":false,
+  "properties":{
+    "pluginLocations": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "config": {
+          "type":"object"
+        },
+        "course": {
+          "type":"object",
+          "properties":{
+            "_videoHelp": {
+              "type":"object",
+              "required":false,
+              "legend": "Course video help",
+              "properties":{
+                "_isEnabled": {
+                  "type":"boolean",
+                  "required":true,
+                  "title": "Enabled",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+                  "help": "Turns Course Video Help on and off. Acceptable values are true and false."
+                },
+                 "_media": {
+                "type":"object",
+                "required":true,
+                "title": "Media",
+                "properties":{
+                    "mp4": {
+                    "type":"string",
+                    "required":false,
+                    "default": "",
+                    "title": "MP4 Link",
+                    "inputType": "Asset:video",
+                    "validators": [],
+                    "help": "Link to an MP4 video"
+                  },
+                  "poster": {
+                    "type":"string",
+                    "required":false,
+                    "default": "",
+                    "title": "Poster Link",
+                    "inputType": "Asset:image",
+                    "validators": [],
+                    "help": "Image displayed before the video is played"
+                  }
+                }
+                },
+                  "_playerOptions": {
+                    "type": "object",
+                    "default": {},
+                    "title": "Player Options",
+                    "inputType": {
+                      "type": "CodeEditor",
+                      "mode": "json"
+                    },
+                    "validators": [],
+                    "help": "Optional object that can be used to customize the player"
+                  }
+                  
+               
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type":"object"
+        },
+        "article": {
+          "type":"object"
+        },
+        "block": {
+          "type":"object"
+        },
+        "component": {
+          "type":"object"
+        }
+      }
+    }
+  }
+}

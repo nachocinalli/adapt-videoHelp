@@ -1,0 +1,27 @@
+// To go on course.json
+
+"_videoHelp": {
+    "_isEnabled": true,
+    "title": "Course help",   
+    "_component": {
+        "_type":"component",
+        "_component":"media",
+        "_classes":"",
+        "_layout":"full",
+        "title":"Title of the media component",
+        "displayTitle": "Title of the media component",
+        "body": "",
+        "instruction": "",
+        "_setCompletionOn":"inview",
+        "_useClosedCaptions":true,
+        "_startLanguage":"en",
+        "_playsinline": false,
+        "_media": {
+            "mp4": "course/en/assets/video.mp4"
+           
+        },            
+        "_playerOptions": {            
+        }
+       
+    }
+}
